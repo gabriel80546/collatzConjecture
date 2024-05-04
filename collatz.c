@@ -20,18 +20,18 @@ void collatz(int x) {
 
 
 int main() {
-    printf("Collatz Conjecture\n");
+    printf("-Collatz Conjecture-\n");
     int i;
 
-    for (i = 1; i < 1000000; i++) {
+    for (i = 1; i < 20; i++) {
         printf("collatz(%i) = ", i);
         collatz(i);
         printf("\n");
     }
 
     /*
-    printf("\n\n.\n\n");
-    for (i = 0; i < 100; i++) {
+    printf("\n\n.\n.\n\n\n");
+    for (i = 0; i < 20; i++) {
         printf("collatz(%i) = ", -i);
         collatz(-i);
         printf("\n");
