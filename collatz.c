@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int max = 1000000;
+int max = 100000000;
 int inicial = 1;
 
 void collatz(int x) {
@@ -23,19 +23,17 @@ int main() {
     printf("-Collatz Conjecture-\n");
     int i;
 
-    for (i = 1; i < 20; i++) {
+    for (i = 1; i < 100000; i++) {
         printf("collatz(%i) = ", i);
         collatz(i);
         printf("\n");
     }
 
-    /*
     printf("\n\n.\n.\n\n\n");
-    for (i = 0; i < 20; i++) {
+    for (i = 0; i < 5; i++) {
         printf("collatz(%i) = ", -i);
         collatz(-i);
         printf("\n");
     }
-    */
     return 0;
 }
